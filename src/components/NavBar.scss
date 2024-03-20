@@ -1,0 +1,40 @@
+.nav {
+    background-color: #ffffff; 
+    padding: 10px; 
+  
+    .menu {
+      display: flex; 
+      justify-content: flex-end; 
+  
+      .menu-element {
+        list-style: none; 
+        display: flex; 
+        margin: 0; 
+        padding: 0; 
+  
+        li {
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+  
+          .active {
+            font-weight: bold; 
+            color: #fff;
+  
+          .login-link {
+            color: #fff;
+          }
+  
+          .account-avatar-mini {
+            img {
+              width: 30px; 
+              height: 30px; 
+              border-radius: 50%; 
+            }
+          }
+        }
+      }
+    }
+  }
+}
