@@ -1,40 +1,60 @@
 .nav {
-    background-color: #ffffff; 
-    padding: 10px; 
-  
-    .menu {
-      display: flex; 
-      justify-content: flex-end; 
-  
-      .menu-element {
-        list-style: none; 
-        display: flex; 
-        margin: 0; 
-        padding: 0; 
-  
-        li {
-          margin-right: 10px;
-          &:last-child {
-            margin-right: 0;
-          }
-  
-          .active {
-            font-weight: bold; 
-            color: #fff;
-  
-          .login-link {
-            color: #fff;
-          }
-  
-          .account-avatar-mini {
-            img {
-              width: 30px; 
-              height: 30px; 
-              border-radius: 50%; 
-            }
-          }
-        }
-      }
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  width: 1152px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-element {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  padding: 0;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29.38px;
+  text-align: right;
+
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
     }
   }
+}
+
+.menu-element a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu-element a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+  color: #fff;
+}
+
+.login-link {
+  color: #fff;
+}
+
+.account-avatar-mini img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
